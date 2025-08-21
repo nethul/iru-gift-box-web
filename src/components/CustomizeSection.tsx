@@ -65,7 +65,6 @@ const CustomizeSection = () => {
             </div>
           </div>
         </div>
-        </button>
       </div>
     </section>
   );
