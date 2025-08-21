@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Plus, Minus, Trash2, ShoppingCart, MessageCircle } from 'lucide-react';
+import toblerone_dark from '../assets/Items/toblerone_dark.webp'
+import toblerone_light from '../assets/Items/toblerone_light.jpg'
+import scented_candle from '../assets/Items/scented_candle.webp'
+import teddy_bear from '../assets/Items/teddy_bear.webp'
+import birthday_card from '../assets/Items/birthday_card.avif'
+import aromatherapy_oil from '../assets/Items/aromatherapy_oil.webp'
 
 interface CustomItem {
   id: number;
@@ -20,26 +26,26 @@ const CustomizePage = () => {
 
   const availableItems: CustomItem[] = [
     // Chocolates & Sweets
-    { id: 1, name: 'Premium Dark Chocolate Box', price: 1250, image: 'https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'chocolates' },
-    { id: 2, name: 'Milk Chocolate Truffles', price: 980, image: 'https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'chocolates' },
-    { id: 3, name: 'Assorted Candy Mix', price: 650, image: 'https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'chocolates' },
-    { id: 4, name: 'Traditional Sri Lankan Sweets', price: 850, image: 'https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'chocolates' },
+    { id: 1, name: 'Toblerone - Dark', price: 1250, image: toblerone_dark, category: 'chocolates' },
+    { id: 2, name: 'Toblerone - Light', price: 1250, image: toblerone_light, category: 'chocolates' },
+    // { id: 3, name: 'Assorted Candy Mix', price: 650, image: 'https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'chocolates' },
+    // { id: 4, name: 'Traditional Sri Lankan Sweets', price: 850, image: 'https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'chocolates' },
     
     // Accessories & Gifts
-    { id: 5, name: 'Scented Candle Set', price: 1150, image: 'https://images.pexels.com/photos/1123262/pexels-photo-1123262.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'accessories' },
-    { id: 6, name: 'Mini Teddy Bear', price: 750, image: 'https://images.pexels.com/photos/1040893/pexels-photo-1040893.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'accessories' },
-    { id: 7, name: 'Photo Frame', price: 450, image: 'https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'accessories' },
-    { id: 8, name: 'Greeting Cards Set', price: 350, image: 'https://images.pexels.com/photos/1303081/pexels-photo-1303081.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'accessories' },
+    { id: 5, name: 'Scented Candle', price: 750, image: scented_candle, category: 'accessories' },
+    { id: 6, name: 'Mini Teddy Bear', price: 885, image: teddy_bear, category: 'accessories' },
+    // { id: 7, name: 'Photo Frame', price: 450, image: 'https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'accessories' },
+    { id: 8, name: 'Greeting Cards', price: 350, image: birthday_card, category: 'accessories' },
     
     // Beauty & Care
-    { id: 9, name: 'Aromatherapy Oil Set', price: 1350, image: 'https://images.pexels.com/photos/1029896/pexels-photo-1029896.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'beauty' },
-    { id: 10, name: 'Hand Cream Collection', price: 950, image: 'https://images.pexels.com/photos/1029897/pexels-photo-1029897.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'beauty' },
-    { id: 11, name: 'Bath Bomb Set', price: 850, image: 'https://images.pexels.com/photos/1029898/pexels-photo-1029898.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'beauty' },
+    { id: 9, name: 'Aromatherapy Oil Set', price: 1350, image: aromatherapy_oil, category: 'beauty' },
+    // { id: 10, name: 'Hand Cream Collection', price: 950, image: 'https://images.pexels.com/photos/1029897/pexels-photo-1029897.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'beauty' },
+    // { id: 11, name: 'Bath Bomb Set', price: 850, image: 'https://images.pexels.com/photos/1029898/pexels-photo-1029898.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'beauty' },
     
     // Snacks & Treats
-    { id: 12, name: 'Gourmet Cookie Box', price: 750, image: 'https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'snacks' },
-    { id: 13, name: 'Dried Fruit Mix', price: 650, image: 'https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'snacks' },
-    { id: 14, name: 'Tea Selection Box', price: 1050, image: 'https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'snacks' },
+    // { id: 12, name: 'Gourmet Cookie Box', price: 750, image: 'https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'snacks' },
+    // { id: 13, name: 'Dried Fruit Mix', price: 650, image: 'https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'snacks' },
+    // { id: 14, name: 'Tea Selection Box', price: 1050, image: 'https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg?auto=compress&cs=tinysrgb&w=400', category: 'snacks' },
   ];
 
   const categories = [
@@ -47,7 +53,7 @@ const CustomizePage = () => {
     { id: 'chocolates', name: 'Chocolates & Sweets' },
     { id: 'accessories', name: 'Accessories & Gifts' },
     { id: 'beauty', name: 'Beauty & Care' },
-    { id: 'snacks', name: 'Snacks & Treats' },
+    // { id: 'snacks', name: 'Snacks & Treats' },
   ];
 
   const filteredItems = availableItems.filter(item => {

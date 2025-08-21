@@ -14,7 +14,7 @@ const Navigation = () => {
           <div className="flex items-center space-x-2">
             <Gift className="w-8 h-8 text-purple-500" />
             <span className="text-xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Iru Gift Box
+              Iru Gift Boxes
             </span>
           </div>
 

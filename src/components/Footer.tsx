@@ -18,7 +18,7 @@ const Footer = () => {
               Bringing joy and creating magical moments for your loved ones across Sri Lanka with thoughtfully curated gift boxes and personalized surprises.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
+              <a href="https://www.facebook.com/profile.php?id=61576747312894" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-300">
                 <Facebook className="w-5 h-5 text-gray-400 hover:text-white" />
               </a>
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors duration-300">
@@ -48,14 +48,14 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-purple-500" />
-                <a href="mailto:hello@magicgiftstore.lk" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  hello@magicgiftstore.lk
+                <a href="mailto:irugiftboxes@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  irugiftboxes@gmail.com
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-cyan-500" />
                 <a href="tel:+94123456789" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  +94 12 345 6789
+                  +94 70 446 7862
                 </a>
               </li>
               <li className="flex items-start space-x-3">
@@ -72,7 +72,7 @@ const Footer = () => {
         {/* Bottom section */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 sm:mb-0">
-            © 2025 Magic Gift Store. All rights reserved.
+            © 2025 Iru Gift Boxes. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
