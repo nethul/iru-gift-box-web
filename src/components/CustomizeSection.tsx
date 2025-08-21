@@ -32,6 +32,10 @@ const CustomizeSection = () => {
           </p>
 
           <button className="group bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-500 hover:from-purple-700 hover:via-pink-700 hover:to-cyan-600 text-white font-bold px-10 py-5 rounded-full text-xl transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-purple-500/30 flex items-center space-x-4 mx-auto">
+          <button 
+            onClick={() => window.open('/customize', '_blank')}
+            className="group bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-500 hover:from-purple-700 hover:via-pink-700 hover:to-cyan-600 text-white font-bold px-10 py-5 rounded-full text-xl transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-purple-500/30 flex items-center space-x-4 mx-auto"
+          >
             <span>Customize a gift myself</span>
             <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" />
           </button>
