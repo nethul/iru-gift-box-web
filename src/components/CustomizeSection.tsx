@@ -1,6 +1,5 @@
 import React from 'react';
-import { Sparkles, ArrowRight } from 'lucide-react';
-import {User, Truck, Heart} from 'lucide-react';
+import { Sparkles, ArrowRight, User, Truck, Heart } from 'lucide-react';
 
 const CustomizeSection = () => {
   return (
@@ -31,7 +30,7 @@ const CustomizeSection = () => {
             Can't find the perfect gift? Design your own personalized gift box with items that perfectly match your loved one's preferences and interests.
           </p>
 
-          <button className="group bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-500 hover:from-purple-700 hover:via-pink-700 hover:to-cyan-600 text-white font-bold px-10 py-5 rounded-full text-xl transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-purple-500/30 flex items-center space-x-4 mx-auto">
+          {/* ✅ Fixed single button */}
           <button 
             onClick={() => window.open('/customize', '_blank')}
             className="group bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-500 hover:from-purple-700 hover:via-pink-700 hover:to-cyan-600 text-white font-bold px-10 py-5 rounded-full text-xl transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-purple-500/30 flex items-center space-x-4 mx-auto"
@@ -71,5 +70,3 @@ const CustomizeSection = () => {
 };
 
 export default CustomizeSection;
-  )
-}
