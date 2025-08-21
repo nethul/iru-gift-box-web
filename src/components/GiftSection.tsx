@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { useState } from 'react';
 import GiftCard from './GiftCard';
 import GiftModal from './GiftModal';

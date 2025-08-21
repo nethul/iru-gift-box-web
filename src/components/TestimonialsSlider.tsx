@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, MessageCircle, Star } from 'lucide-react';
 import priyaAvatar from '../assets/avatars/PriyaPerera (1).jpeg'
 import kasunAvatar from '../assets/avatars/KasunSilva.jpeg'

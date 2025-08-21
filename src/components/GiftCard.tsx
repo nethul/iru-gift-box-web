@@ -9,7 +9,7 @@ interface GiftCardProps {
   onShowDetails: () => void;
 }
 
-const GiftCard: React.FC<GiftCardProps> = ({ image, title, description, price, color, onShowDetails }) => {
+const GiftCard: React.FC<GiftCardProps> = ({ image, title, description, price, onShowDetails }) => {
   return (
     <div className="group bg-gray-800/60 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20 flex flex-col">
       {/* Full-size Image */}

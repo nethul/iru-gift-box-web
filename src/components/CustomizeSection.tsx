@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Sparkles, ArrowRight, User, Truck, Heart } from 'lucide-react';
 
 const CustomizeSection = () => {

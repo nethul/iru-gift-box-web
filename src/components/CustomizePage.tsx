@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState} from 'react';
 import { ArrowLeft, Plus, Minus, Trash2, ShoppingCart, MessageCircle } from 'lucide-react';
 import toblerone_dark from '../assets/Items/toblerone_dark.webp'
 import toblerone_light from '../assets/Items/toblerone_light.jpg'
