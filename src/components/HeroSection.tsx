@@ -2,6 +2,13 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
+  const scrollToGifts = () => {
+    const giftsSection = document.getElementById('gifts');
+    if (giftsSection) {
+      giftsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex items-center overflow-hidden">
       {/* Animated background elements */}
@@ -33,7 +40,10 @@ const HeroSection = () => {
               Send heartfelt surprises and create magical moments for your family and friends across Sri Lanka with our curated gift boxes.
             </p>
             
-            <button className="group bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 flex items-center space-x-3">
+            <button 
+              onClick={scrollToGifts}
+              className="group bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 flex items-center space-x-3"
+            >
               <span>Let's gift</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </button>
